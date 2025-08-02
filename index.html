@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="スポーツは楽しい！" />
+    <meta property="og:title" content="DHW Company" />
+    <meta property="og:type" content="website" />
+    <meta property="og:local" content="ja-jp" />
+    <meta property="og:image" content="https://example.com/image.jpg" />
+    <meta property="og:description" content="スポーツは楽しい！" />
+    <meta name="twitter:card" content="summary" />
+    <title>DHW Company</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/slick/slic.css" />
+     <link rel="stylesheet" href="assets/slick/slic-theme.css" />
+    <link rel="stylesheet" href="../15_dhwco/css/common.css" />
+    <link rel="stylesheet" href="../15_dhwco/css/top.css" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content__wrapper">
+        <h1><a href="index.html">DHW Company</a></h1>
+        <div id="open-button" class="open-button"><span></span></div>
+        <nav>
+          <div id="close-button" class="close-button">×</div>
+          <ul>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="services.html">サービス</a></li>
+            <li><a href="news_list.html">ニュースリリース</a></li>
+            <li><a href="inquiry.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main top__wrapper">
+        <section class="section__top">
+          <div class="section-top__image">
+            <div class="section-top__image-filter">
+              <div class="section-top__image-message">
+                <h2>スポーツは楽しい！</h2>
+                <p>
+                  DHW Companyは、スポーツを通じて<br />
+                  人々の生活を豊かにすることを目指しています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-news">
+          <h2>ニュース</h2>
+          <ol class="main__services__list">
+            <li>
+              <div class="section-news__category new">プレスリリース</div>
+              <a href="news.html">
+                <h3>総額10億円の資金調達を実施しました。</h3>
+                <time datetime="20xx/12/01">20xx/12/01</time>
+              </a>
+            </li>
+            <li>
+              <div class="section-news__category">お知らせ</div>
+              <h3>
+                20xx/11/10
+                20：00よりサービスサイトのメンテナンスを実施予定です。
+              </h3>
+              <time datetime="20xx/11/01">20xx/11/01</time>
+            </li>
+            <li>
+              <div class="section-news__category">プレスリリース</div>
+              <h3>DHW Dash シューズの新シリーズが発表されました。</h3>
+              <time datetime="20xx/10/01">20xx/10/01</time>
+            </li>
+          </ol>
+          <div class="section-news__more-link">
+            <a href="news_list.html">もっと読む…</a>
+          </div>
+        </section>
+      </div>
+      <section class="section__service">
+      
+        <div class="main__services__wrapper">
+              <h2>サービス一覧</h2>
+              <ul>
+                <li>
+                    <img class="section__service__picture" src="assets/images/service1.jpg" alt="DHW スポーツ用品事業">
+                    <a class="section__service__title" href=""><h3>DHW スポーツ用品事業</h3></a>
+                    <p class="section__service__description">DHW Dashを中心に、最新のテクノロジーを駆使してアスリートの能力を最大限に引き出すスポーツ用品を開発しています。</p>
+                </li>
+
+                 <li>
+                    <img class="section__service__picture" src="assets/images/service2.jpg" alt="サプリメント事業">
+                  <a class="section__service__title" href="#" target="_blank" rel="noopener">
+                     <!-- ↑targetを使ったら必ずrel="noopener"を入れる -->
+                    <h3>サプリメント事業</h3>（外部サイトへ）</a>
+                    <p class="section__service__description">アスリートのパフォーマンス向上をサポートするため、科学的根拠に基づいた高品質なサプリメントを提供しています。</p>
+                </li>
+
+                <li>
+                    <img class="section__service__picture" src="assets/images/service3.jpg" alt="SDGsへの取り組み（外部サイトへ）">
+                  <a class="section__service__title" href="#" target="_blank" rel="noopener">
+                     <!-- ↑targetを使ったら必ずrel="noopener"を入れる -->
+                    <h3>SDGsへの取り組み</h3>（外部サイトへ）</a>
+                    <p class="section__service__description">DHWでは、社会の一員としてSDGsへの取り組みが大切であると考えています。詳しい取り組みは、特設サイトをご覧ください。</p>
+                </li>
+              </ul>
+         
+              <!-- ↓videoタグで動画の埋め込みをしたら、controlを入れることで再生できるようになる -->
+          <div>
+            <video class="section__service__video" src="assets/videos/service.mp4" type="video/mp4" controls></video>>
+          </div>
+        </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content__wrapper">
+       <nav class="site-map">
+          
+          <ul class="site-map__main-list">
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="services.html">サービス</a></li>
+            <li><a href="news_list.html">ニュースリリース</a></li>
+            <li><a href="inquiry.html">お問い合わせ</a></li>
+          </ul>
+          <ul class="site-map__service-list">
+            <li><a href="#">DHW スポーツ用品事業</a></li>
+            <li><a href="#">サプリメント事業</a></li>
+            <li><a href="#">SDGsへの取り組み</a></li>
+            </ul>
+            </nav>
+            <small class="footer__copyright">
+              &copy; 20xx DHW Company All Rights Reserved.</small>
+        </div>
+    <a href="#" class="scroll-to-top">
+      <p id="scroll-to-top">▲</p>
+    </a>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous" defer></script>
+    <script src="assets/slick/slick.min.js" defer></script>
+    <script src="assets/js/common.js" defer></script>
+
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="スポーツは楽しい！" />
+    <meta property="og:title" content="DHW Company" />
+    <meta property="og:type" content="website" />
+    <meta property="og:local" content="ja-jp" />
+    <meta property="og:image" content="https://example.com/image.jpg" />
+    <meta property="og:description" content="スポーツは楽しい！" />
+    <meta name="twitter:card" content="summary" />
+    <title>DHW Company</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/slick/slic.css" />
+    <link rel="stylesheet" href="assets/slick/slic-theme.css" />
+    <link rel="stylesheet" href="../15_dhwco/css/common.css" />
+    <link rel="stylesheet" href="../15_dhwco/css/inquiry.css" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content__wrapper">
+        <h1><a href="index.html">DHW Company</a></h1>
+        <div id="open-button" class="open-button"><span></span></div>
+        <nav>
+          <div id="close-button" class="close-button">×</div>
+          <ul>
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="services.html">サービス</a></li>
+            <li><a href="news_list.html">ニュースリリース</a></li>
+            <li><a href="inquiry.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section__top">
+        <div class="section-top__image">
+          <div class="section-top__image-filter">
+            <h2>お問い合わせ</h2>
+          </div>
+        </div>
+      </section>
+      <form action="inquiry.html" class="inquiry-form">
+        <!-- action部分にはphpプログラムが入ることが多い -->
+        <p>
+          <label for="form_name">お名前</label>
+          <input id="form_name" type="text" placeholder="入力してください" />
+        </p>
+        <!-- labelとidが一致していると入力場所を紐づけできる -->
+
+        <p>
+          <label for="">ご連絡について</label>
+          <span class="inquiry-form__contact_method">
+            <input
+              id="form_reply_method_tel"
+              type="radio"
+              name="form_reply_method"
+            />
+            <label for="form_reply_method_tel" class="small-label"
+              >電話で折り返してほしい</label
+            ><br />
+
+            <input
+              id="form_reply_method_mail"
+              type="radio"
+              name="form_reply_method"
+            />
+            <label for="form_reply_method_mail" class="small-label"
+              >メールで折り返してほしい</label
+            >
+          </span>
+        </p>
+
+        <p>
+          <label for="form_mail">メールアドレス</label>
+          <input id="form_mail" type="email" placeholder="入力してください" />
+        </p>
+
+        <p>
+          <label for="inquiry_kind">お問い合わせの種類</label>
+          <select id="inquiry_kind">
+            <option value="">選択してください。</option>
+            <!-- value内に送信内容が入る -->
+            <option value="">サービスに関するお問い合わせ。</option>
+            <option value="">その他のお問い合わせ。</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="form_inquiry_detail">お問い合わせ詳細</label>
+          <textarea
+            id="form_inquiry_detail"
+            placeholder="入力してください"
+          ></textarea>
+        </p>
+
+        <p>
+          <input id="form_privacy" class="privacy_check" type="checkbox" />
+          <label for="form_privacy" class="small-label"
+            ><a href="" class="inquiry-form__privacy-link"
+              >プライバシーポリシー</a
+            >に同意</label
+          >
+        </p>
+
+        <input
+          class="inquiry-form__submit"
+          type="submit"
+          name="submit"
+          value="確認する"
+        />
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content__wrapper">
+        <nav class="site-map">
+          <ul class="site-map__main-list">
+            <li><a href="about.html">会社概要</a></li>
+            <li><a href="services.html">サービス</a></li>
+            <li><a href="news_list.html">ニュースリリース</a></li>
+            <li><a href="inquiry.html">お問い合わせ</a></li>
+          </ul>
+          <ul class="site-map__service-list">
+            <li><a href="#">DHW スポーツ用品事業</a></li>
+            <li><a href="#">サプリメント事業</a></li>
+            <li><a href="#">SDGsへの取り組み</a></li>
+          </ul>
+        </nav>
+        <small class="footer__copyright">
+          &copy; 20xx DHW Company All Rights Reserved.</small
+        >
+      </div>
+    </footer>
+    <a href="#" class="scroll-to-top">
+      <p id="scroll-to-top">▲</p>
+    </a>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="assets/slick/slick.min.js" defer></script>
+    <script src="assets/js/common.js" defer></script>
+  </body>
+</html>
